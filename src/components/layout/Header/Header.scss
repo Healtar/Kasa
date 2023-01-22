@@ -1,0 +1,21 @@
+
+.k-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .k-logo{
+        width: 145px;
+    }
+}
+
+
+@media (min-width:961px){
+
+    .k-header{
+        .k-logo{
+            width: 210px;
+        }
+    }
+
+}
