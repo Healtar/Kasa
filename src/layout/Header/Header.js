@@ -1,5 +1,5 @@
 import './Header.scss'
-import logo from '../../../assets/logo.svg'
+import logo from '../../assets/logo.svg'
 import Navbar from './Navbar/Navbar'
 
 

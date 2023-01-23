@@ -1,8 +1,8 @@
 import { Link, Outlet } from "react-router-dom";
-import logements from '../../../data/logements.json';
+import logements from '../../data/logements.json';
 import './Home.scss'
-import Card from '../../Card/Card';
-import FicheLogement from "../FicheLogement/FicheLogement";
+import Card from '../../components/Card/Card';
+
 
 export default function Home() {
     

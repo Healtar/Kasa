@@ -1,12 +1,12 @@
 // import React from "react";
-import logements from '../../../data/logements.json';
-import Tag from '../../Tag/Tag'
+import logements from '../../data/logements.json';
+import Tag from '../../components/Tag/Tag'
 import { useParams } from "react-router-dom";
-import Dropdown from '../../Dropdown/Dropdown';
+import Dropdown from '../../components/Dropdown/Dropdown';
 
 
 
-export default function FicheLogement({title}) {
+export default function FicheLogement() {
     const params = useParams();
     const id = params.id
     console.log(logements);
