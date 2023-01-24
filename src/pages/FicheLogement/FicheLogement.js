@@ -9,9 +9,7 @@ import Dropdown from '../../components/Dropdown/Dropdown';
 export default function FicheLogement() {
     const params = useParams();
     const id = params.id
-    console.log(logements);
     const logement = logements.find((logement) => logement.id === id);
-    console.log(logement);
     return(
         <main className="k-fiche-logement container">
             {/* <img src={}/> */}

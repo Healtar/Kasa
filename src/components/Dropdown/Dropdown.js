@@ -1,12 +1,21 @@
+import {useState} from "react";
 import './Dropdown.scss';
 
 export default function Dropdown({title, description}) {
     
+    const [isOpen, setIsOpen] = useState(false);
+
+
+    const handleOpen = () =>{
+        setIsOpen(!isOpen)
+        console.log(isOpen);
+    }
 
     return(
-       <div className="dropdown-container">
+       <div onClick={() => handleOpen()} className="dropdown-container">
         <h3>{title}</h3>
-        <div className="offset">{description}</div>
+        {isOpen === true ? <div className="offset">{description}</div> : null}
+        
     </div> 
     )
     

@@ -12,8 +12,6 @@ export default function Card({title, cover}) {
         font-size: 8px;
         height: 100%;
         border-radius: 20px;
-
-
     `
 
     return(
