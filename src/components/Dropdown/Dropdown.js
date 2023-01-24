@@ -14,9 +14,11 @@ export default function Dropdown({title, description}) {
     return(
        <div onClick={() => handleOpen()} className="dropdown-container">
         <h3>{title}</h3>
-        {isOpen === true ? <div className="offset">{description}</div> : null}
+        {isOpen === true ? <div className="offset offset__open">{description}</div> : <div className="offset offset__close">{description}</div>}
+        </div> 
         
-    </div> 
+        
+    
     )
     
 }

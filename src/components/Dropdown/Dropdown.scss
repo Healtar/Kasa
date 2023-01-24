@@ -1,17 +1,25 @@
 .dropdown-container{
-    position: relative;
-    overflow: hidden;
-
-    &:active{
-       height: 150px;
-        .offset{
-            top: 0;
-        }
+    background-color: red;
+    border-radius: 20px;
+    
+    h3{
+        z-index: 1;
     }
 
     .offset{
-        padding-top: 30px;
-        position: absolute;
-        top: -150px;
+
+        &__open{
+            display: block;
+            max-height: fit-content;
+            // display: block;
+        }
+
+        &__close{
+        max-height: 100%;
+        display: none;
+        }
+        transition: all 5s ease-in-out;
+        overflow: hidden;
+
     }
 }
