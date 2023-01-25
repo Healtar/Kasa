@@ -13,10 +13,11 @@ export default function FicheLogement() {
     const params = useParams();
     const id = params.id
     const logement = logements.find((logement) => logement.id === id);
-    
+//revoir key
+
     return(
         <main className="k-fiche-logement container">
-            {/* <img src={}/> */}<Carousel/>
+            {/* <img src={}/> */}<Carousel imgData={logement.pictures}/>
             <h2>{logement.title}</h2>
             <p>{logement.location}</p>
             <ul>

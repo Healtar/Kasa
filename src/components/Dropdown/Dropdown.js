@@ -6,14 +6,9 @@ export default function Dropdown({title, description}) {
     
     const [isOpen, setIsOpen] = useState(false);
     const [contentHeight, setContentHeight] = useState(0);
-    const [styledContent, setStyledContent] = useState()
 
 
-    const content = document.getElementById('content');
-    const StyledContent = styled.content`
-                            maxHeight: ${contentHeight};
-                            padding: 0px;
-                        `;
+
 
     const handleOpen = () => {
         setIsOpen(!isOpen)
@@ -24,21 +19,16 @@ export default function Dropdown({title, description}) {
         {
             const content = document.getElementById('content');
             const size = content.scrollHeight + 100;
+            content.className = "offset offset__open";
             setContentHeight(size);
-            StyledContent = styled.content`
-                                maxHeight: ${contentHeight};
-                                padding: 50px;
-                            `;
+
 }
         else
         {
             const content = document.getElementById('content');
             content.className = "offset offset__close";
             setContentHeight(0);
-            StyledContent = styled.content`
-                                maxHeight: ${contentHeight};
-                                padding: 0px;
-                            `;
+
         }
     
  },[isOpen])
@@ -46,7 +36,7 @@ export default function Dropdown({title, description}) {
 
        <div onClick={() => handleOpen()} className="dropdown-container">
         <h3>{title} {isOpen ? 'Open' : 'Close'}</h3>
-        <StyledContent id="content" className="offset offset__open" style={{ maxHeight: `calc(${contentHeight}px)`,}}>{description}</StyledContent>
+        <p id="content" className="offset offset__open" style={{ maxHeight: `${contentHeight}px`,}}>{description}</p>
         {/* {isOpen === true ? <div className="offset offset__open">{description}</div> : <div className="offset offset__close">{description}</div>} */}
         </div> 
    
