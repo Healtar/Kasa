@@ -1,25 +1,40 @@
 .dropdown-container{
-    background-color: red;
-    border-radius: 20px;
+    
+    
+    
+    // overflow: hidden;
     
     h3{
-        z-index: 1;
+        border-radius: 10px;
+        background-color: #FF6060;
+        color: #FFF;
+        font-weight: normal;
+        font-size: 18px;
+        padding: 10px;
+        vertical-align: baseline;
     }
 
     .offset{
-
-        &__open{
-            display: block;
-            max-height: fit-content;
-            // display: block;
-        }
+        background-color: #F6F6F6;
+        border-radius: 10px;
+        
+        border: 1px solid black;
+        margin-top: -10px;
+        
+   
 
         &__close{
-        max-height: 100%;
         display: none;
         }
-        transition: all 5s ease-in-out;
         overflow: hidden;
-
+        transition: all 0.2s ease-in-out;
+        overflow: hidden;
+        padding-top: 0;
+        padding-bottom: 0;
     }
+}
+
+@keyframes paddingIn {
+    from { padding: 0px 0; }
+    to { padding: 50px 0;}
 }
