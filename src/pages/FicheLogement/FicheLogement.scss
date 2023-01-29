@@ -1,0 +1,145 @@
+@import "../../style/general/colors.scss";
+
+.k-fiche-logement {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__logement-infos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .logement-infos__title {
+      font-size: 20px;
+      line-height: 1.2;
+      color: $primary;
+      font-weight: normal;
+    }
+
+    .k-fiche-logement__location {
+      font-size: 18px;
+
+      color: $primary;
+    }
+
+    .tag-list {
+      display: flex;
+      row-gap: 20px;
+      column-gap: 10px;
+      flex-wrap: wrap;
+      list-style: none;
+    }
+  }
+
+  &__profile-infos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .rate {
+      display: flex;
+      list-style: none;
+      .star__empty {
+        color: $grey;
+      }
+
+      .star__full {
+        color: $primary;
+      }
+    }
+
+    .host {
+      width: 135px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      &-name {
+        color: $primary;
+        text-align: end;
+        font-size: 14px;
+        line-height: 1.2;
+      }
+
+      &-picture {
+        width: 50px;
+        height: 50px;
+        border-radius: 50px;
+      }
+    }
+  }
+  .collapses {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+}
+
+@media (min-width: 961px) {
+  .k-fiche-logement {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    &__logement-infos {
+      display: flex;
+
+      gap: 10px;
+      .logement-infos__title {
+        font-size: 36px;
+      }
+
+      .tag-list {
+        margin-top: 20px;
+        margin-bottom: 10px;
+        display: flex;
+        row-gap: 20px;
+        column-gap: 10px;
+        flex-wrap: wrap;
+        list-style: none;
+      }
+    }
+
+    &__profile-infos {
+      flex-direction: column-reverse;
+      align-items: flex-end;
+      .rate {
+        display: flex;
+        list-style: none;
+        font-size: 36px;
+        .star__empty {
+          color: $grey;
+        }
+
+        .star__full {
+          color: $primary;
+        }
+      }
+
+      .host {
+        width: 135px;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+
+        &-name {
+          font-size: 18px;
+        }
+
+        &-picture {
+          width: 64px;
+          height: 64px;
+        }
+      }
+    }
+
+    .collapses {
+      flex-direction: row;
+      gap: 80px;
+      height: 225px;
+      .collapse-container {
+        width: 50%;
+      }
+    }
+  }
+}

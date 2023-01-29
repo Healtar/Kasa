@@ -1,0 +1,32 @@
+@import "../../style/general/colors.scss";
+
+.k-error {
+  &-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    gap: 25px;
+    color: $primary;
+    &__title {
+      font-size: 96px;
+    }
+
+    &__text {
+      width: 90%;
+      font-size: 18px;
+      text-align: center;
+      font-weight: bolder;
+    }
+  }
+
+  &-link {
+    display: block;
+    width: 100%;
+    margin-bottom: 160px;
+    text-align: center;
+    font-size: 14px;
+    color: $primary;
+  }
+}

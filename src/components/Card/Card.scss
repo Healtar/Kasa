@@ -1,0 +1,12 @@
+.card {
+  display: flex;
+  align-items: flex-end;
+  &-caption {
+    width: 75%;
+    text-decoration-line: none;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 30px;
+  }
+}

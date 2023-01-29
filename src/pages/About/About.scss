@@ -1,0 +1,25 @@
+.k-about {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .header-main {
+    height: 220px;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    gap: inherit;
+    margin-bottom: 150px;
+  }
+}
+
+@media (min-width: 961px) {
+  .k-about {
+    &-content {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+  }
+}

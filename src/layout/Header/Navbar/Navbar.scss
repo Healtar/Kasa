@@ -1,34 +1,35 @@
-.k-main-nav{
-    ul{
-        display: flex;
-        column-gap: 15px;
+@import "../../../style/general/colors.scss";
 
-        li{
-            list-style: none;
-            
-            a{
-                color: #FF6060;
-                text-decoration: none;
-                font-size: 14px;
-                
+.k-main-nav {
+  ul {
+    display: flex;
+    column-gap: 15px;
 
-                &:hover{
-                    text-decoration: underline;
-                }
-            }
+    li {
+      list-style: none;
+
+      a {
+        color: $primary;
+        text-decoration: none;
+        font-size: 14px;
+
+        &:hover {
+          text-decoration: underline;
         }
+      }
     }
+  }
 }
 
 @media (min-width: 961px) {
-    .k-main-nav{
-        ul{
-            column-gap: 30px;
-            li{
-                a{
-                    font-size: 16px;
-                }
-            }
+  .k-main-nav {
+    ul {
+      column-gap: 30px;
+      li {
+        a {
+          font-size: 16px;
         }
+      }
     }
+  }
 }

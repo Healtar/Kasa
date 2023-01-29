@@ -1,32 +1,54 @@
-.k-home{
+@import "../../style/general/colors.scss";
 
-    .logements-list{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        li{
-            list-style: none;
-            .card{
-                width: 100%;
-                height: 150px;
-            }
-        }
+.k-home {
+  .header-main {
+    height: 100px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .logements-list {
+      display: flex;
+      flex-direction: column;
+      gap: inherit;
+
+      .card-item {
+        list-style: none;
+        width: 100%;
+        height: 255px;
+      }
     }
+  }
 }
 
 @media (min-width: 961px) {
-    .k-home{
-        width: 100%;
-        .logements-list{
-            justify-content: center;
-            width: 100%;
-            flex-direction: row;
-            flex-wrap: wrap;
-
-            .card{
-                width: calc(100% / 3 - 14px);
-                height: 150px;
-            }
+  .k-home {
+    width: 100%;
+    section {
+      .header-main {
+        height: 200px;
+        span {
+          font-size: 48px;
+          margin: 0 auto;
         }
+      }
+      .logements-list {
+        justify-content: center;
+        width: 100%;
+        gap: 40px;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color: #f6f6f6;
+        border-radius: 20px;
+        .card-item {
+          width: calc(100% / 3 - 50px);
+          height: 350px;
+        }
+      }
     }
+  }
 }
