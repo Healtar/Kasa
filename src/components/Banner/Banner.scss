@@ -5,7 +5,10 @@
   align-items: center;
   border: none;
   border-radius: 10px;
-
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: inset 2000px 0 0 0 rgba(0, 0, 0, 0.4);
   &-caption {
     color: #fff;
     font-size: 22px;
