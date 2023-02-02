@@ -13,24 +13,38 @@ export default function Carousel({ imgData, name }) {
   const prevSlide = () => {
     setCurrent(current === 0 ? length - 1 : current - 1);
   };
-
   return (
     <div className="carousel">
-      {imgData.map((image, index) => {
-        return (
-          <div key={index}>
-            {console.log(image)}
-            {index === current && <img src={image} alt="image du logement" />}
-          </div>
-        );
-      })}
-      <div className="carousel-arrows">
-        <FaChevronLeft className="arrow-left" onClick={() => prevSlide()} />
-        <span className="center">
-          {current + 1}/{length}
-        </span>
-        <FaChevronRight className="arrow-right" onClick={() => nextSlide()} />
-      </div>
+      {length === 1 ? (
+        <img src={imgData[0]} />
+      ) : (
+        imgData.map((image, index) => {
+          return (
+            <div>
+              <div key={index}>
+                {console.log(image)}
+                {index === current && (
+                  <img src={image} alt="image du logement" />
+                )}
+              </div>
+
+              <div className="carousel-arrows">
+                <FaChevronLeft
+                  className="arrow-left"
+                  onClick={() => prevSlide()}
+                />
+                <span className="center">
+                  {current + 1}/{length}
+                </span>
+                <FaChevronRight
+                  className="arrow-right"
+                  onClick={() => nextSlide()}
+                />
+              </div>
+            </div>
+          );
+        })
+      )}
     </div>
   );
 }
