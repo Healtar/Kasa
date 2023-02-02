@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import "./Collapse.scss";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 
-export default function Collapse({ title, content }) {
-  const [isOpen, setIsOpen] = useState(false);
+export default function Collapse({ title, content , open}) {
+  const [isOpen, setIsOpen] = useState(open);
   const [contentHeight, setContentHeight] = useState(0);
 
   const handleOpen = () => {
