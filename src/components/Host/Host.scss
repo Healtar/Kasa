@@ -1,0 +1,40 @@
+@import "../../style/general/colors.scss";
+
+.host {
+  width: 135px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: flex-end;
+
+  &-name {
+    color: $primary;
+    text-align: end;
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  &-picture {
+    width: 32px;
+    height: 32px;
+    border-radius: 50px;
+  }
+}
+
+@media (min-width: 991px) {
+  .host {
+    width: 135px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    &-name {
+      font-size: 18px;
+    }
+
+    &-picture {
+      width: 64px;
+      height: 64px;
+    }
+  }
+}

@@ -4,12 +4,14 @@
   border-radius: 5px;
 
   h3 {
+    cursor: pointer;
     border-radius: 5px;
     background-color: #ff6060;
     color: #fff;
     font-weight: normal;
-    font-size: 18px;
-    padding: 10px 12px;
+    letter-spacing: 0.7px;
+    font-size: 13px;
+    padding: 13px 15px;
 
     display: flex;
     svg {
@@ -23,16 +25,36 @@
   .offset {
     background-color: #f6f6f6;
     border-radius: 10px;
-
-    padding-left: 20px;
-    padding-right: 20px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding-left: 10px;
+    padding-right: 10px;
     overflow: hidden;
     transition: all 0.3s ease-in;
     color: $primary;
-    max-height: 0;
+    height: 0;
     &__open {
-      padding: 20px;
-      max-height: 100%;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      height: 100%;
+      transition: all 0.3s ease-in;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .collapse-container {
+    h3 {
+      font-size: 18px;
+    }
+
+    .offset {
+      font-size: 18px;
+      &__open {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: calc(100% - 60px);
+      }
     }
   }
 }

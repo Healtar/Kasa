@@ -1,6 +1,6 @@
 .k-header {
   margin-top: 30px;
-  margin-bottom: 30px;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: 961px) {
+@media (min-width: 992px) {
   .k-header {
     .k-logo {
       width: 210px;

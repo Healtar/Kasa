@@ -11,13 +11,14 @@
     color: $primary;
     &__title {
       font-size: 96px;
+      font-weight: bold;
     }
 
     &__text {
       width: 90%;
       font-size: 18px;
       text-align: center;
-      font-weight: bolder;
+      font-weight: bold;
     }
   }
 
@@ -28,5 +29,20 @@
     text-align: center;
     font-size: 14px;
     color: $primary;
+  }
+}
+
+@media (min-width: 991px) {
+  .k-error {
+    &-content {
+      gap: 50px;
+      &__title {
+        font-size: 288px;
+      }
+
+      &__text {
+        font-size: 36px;
+      }
+    }
   }
 }

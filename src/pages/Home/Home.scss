@@ -1,9 +1,6 @@
 @import "../../style/general/colors.scss";
 
 .k-home {
-  .header-main {
-    height: 100px;
-  }
   section {
     display: flex;
     flex-direction: column;
@@ -22,30 +19,25 @@
   }
 }
 
-@media (min-width: 961px) {
+@media (min-width: 992px) {
   .k-home {
     width: 100%;
+    margin-top: 20px;
     section {
-      .header-main {
-        height: 200px;
-        span {
-          font-size: 48px;
-          margin: 0 auto;
-        }
-      }
       .logements-list {
         justify-content: center;
         width: 100%;
-        gap: 40px;
+        gap: 50px;
+
         flex-direction: row;
-        align-items: center;
+        align-items: flex-start;
         flex-wrap: wrap;
         padding-top: 40px;
         padding-bottom: 40px;
         background-color: #f6f6f6;
         border-radius: 20px;
         .card-item {
-          width: calc(100% / 3 - 50px);
+          width: calc(100% / 3 - 60px);
           height: 350px;
         }
       }

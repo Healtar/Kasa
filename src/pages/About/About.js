@@ -10,17 +10,14 @@ export default function About() {
     window.innerWidth > 961 ? true : false
   );
 
-  //choose the screen size
   const handleResize = () => {
-    if (window.innerWidth > 961) {
-      console.log(isDesktop);
+    if (window.innerWidth > 991) {
       setIsDesktop(true);
     } else {
       setIsDesktop(false);
     }
   };
 
-  // create an event listener
   useEffect(() => {
     window.addEventListener("resize", handleResize);
   });

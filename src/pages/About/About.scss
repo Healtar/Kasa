@@ -3,20 +3,19 @@
   flex-direction: column;
   gap: 20px;
 
-  .header-main {
-    height: 220px;
-  }
-
+  margin-bottom: 150px;
   &-content {
     display: flex;
     flex-direction: column;
     gap: inherit;
-    margin-bottom: 150px;
   }
 }
 
-@media (min-width: 961px) {
+@media (min-width: 992px) {
   .k-about {
+    margin-top: 20px;
+
+    gap: 35px;
     &-content {
       padding-left: 100px;
       padding-right: 100px;

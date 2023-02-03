@@ -16,15 +16,14 @@ export default function Carousel({ imgData, name }) {
   return (
     <div className="carousel">
       {length === 1 ? (
-        <img src={imgData[0]} />
+        <img src={imgData[0]} alt="logement" />
       ) : (
         imgData.map((image, index) => {
           return (
             <div>
               <div key={index}>
-                {console.log(image)}
                 {index === current && (
-                  <img src={image} alt="image du logement" />
+                  <img src={image} alt={"logement" + current} />
                 )}
               </div>
 

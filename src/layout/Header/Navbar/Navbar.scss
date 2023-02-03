@@ -11,7 +11,7 @@
       a {
         color: $primary;
         text-decoration: none;
-        font-size: 14px;
+        font-size: 12px;
 
         &:hover {
           text-decoration: underline;
@@ -21,10 +21,10 @@
   }
 }
 
-@media (min-width: 961px) {
+@media (min-width: 992px) {
   .k-main-nav {
     ul {
-      column-gap: 30px;
+      column-gap: 40px;
       li {
         a {
           font-size: 16px;

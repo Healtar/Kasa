@@ -1,9 +1,15 @@
 @import "../../style/general/colors.scss";
 
 .tag {
-  padding: 7px 30px;
+  padding: 4px 30px;
   border-radius: 10px;
   background-color: $primary;
   color: #fff;
-  font-size: 12px;
+  font-size: 10px;
+}
+
+@media (min-width: 991px) {
+  .tag{
+    font-size: 14px;
+  }
 }
