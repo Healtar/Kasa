@@ -1,6 +1,6 @@
 @import "../../style/general/colors.scss";
 
-.k-error {
+.k-notFound {
   &-content {
     display: flex;
     flex-direction: column;
@@ -33,7 +33,7 @@
 }
 
 @media (min-width: 991px) {
-  .k-error {
+  .k-notFound {
     &-content {
       gap: 50px;
       &__title {

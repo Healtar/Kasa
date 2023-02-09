@@ -1,7 +1,6 @@
-import logo from "./logo.svg";
 import "./style/global.scss";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Error from "./pages/Error/Error";
+import NotFound from "./pages/NotFound/NotFound";
 import Header from "./layout/Header/Header";
 import Home from "./pages/Home/Home";
 import Footer from "./layout/Footer/Footer";
@@ -16,7 +15,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route exact path="/about/" element={<About />} />
         <Route path="/logement/:id" element={<FicheLogement />} />
-        <Route path="*" element={<Error />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>
