@@ -2,7 +2,7 @@ import "./Carousel.scss";
 import { useState } from "react";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 
-export default function Carousel({ imgData, name }) {
+export default function Carousel({ imgData }) {
   const [current, setCurrent] = useState(0);
   const length = imgData.length;
 

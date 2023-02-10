@@ -4,7 +4,7 @@ import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 
 export default function Collapse({ title, content, open }) {
   const [isOpen, setIsOpen] = useState(open);
-  // const [contentHeight, setContentHeight] = useState(0);
+
 
   const handleOpen = () => {
     setIsOpen(!isOpen);
@@ -29,3 +29,4 @@ export default function Collapse({ title, content, open }) {
     </div>
   );
 }
+

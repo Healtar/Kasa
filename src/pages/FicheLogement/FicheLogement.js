@@ -61,6 +61,6 @@ export default function FicheLogement() {
       </div>
     </main>
   ) : (
-    <Navigate replace to="/error" />
+    <Navigate replace to="/notfound" />
   );
 }

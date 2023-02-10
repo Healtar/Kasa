@@ -6,10 +6,10 @@ export default function Navbar() {
     <nav className="k-main-nav">
       <ul>
         <li>
-          <Link to="../../">ACCUEIL</Link>
+          <Link to="/">ACCUEIL</Link>
         </li>
         <li>
-          <Link to="../../about">A&nbsp;PROPOS</Link>
+          <Link to="/about">A&nbsp;PROPOS</Link>
         </li>
       </ul>
       <Outlet />

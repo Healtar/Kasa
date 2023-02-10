@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import "./Error.scss";
+import "./Notfound.scss";
 
 export default function Error() {
   return (
