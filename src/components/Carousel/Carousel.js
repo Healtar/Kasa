@@ -20,8 +20,8 @@ export default function Carousel({ imgData }) {
       ) : (
         imgData.map((image, index) => {
           return (
-            <div>
-              <div key={index}>
+            <div key={index}>
+              <div>
                 {index === current && (
                   <img src={image} alt={"logement" + current} />
                 )}
